@@ -1,9 +1,0 @@
-class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        ans = {}
-        for s in strs:
-            sort_S = ''.join(sorted(s)) 
-            ans[sort_S] = ans.get(sort_S,[])
-            ans[sort_S].append(s)
-        return ans.values()
-        
